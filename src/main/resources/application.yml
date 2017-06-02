@@ -1,0 +1,6 @@
+#一个服务实例只能监听/发布在一个总线，spring.cloud.bus.destination指定本实例所在的总线
+#访问endpoint发布事件时，可以指定?destination=name:port,
+#这样在这个总线上只有指定的application.name和server.port的服务实例才会响应事件（总线上的实例都会收到但不响应）
+#实际测试中，发布事件的服务实例，一定会响应这个事件，要注意
+
+#通过指定spring.rabbit配置，自定义使用的rabbit中间件参数
