@@ -25,7 +25,9 @@ public class Application1 {
         app.run(args);
     }
 
+    //发布事件:localhost:8080/bus/refresh
+
     //访问8080/refresh节点，指定destination=test2:8090，8080,8090服务都会响应一个refreshEvent
     //访问8080/refresh节点，指定destination=test1:8080，只有8080服务会响应一个refreshEvent
-    //发布事件的服务自身一定会响应本事件？
+    //发布事件的服务自身一定会响应本事件，一般通过访问configserver发布refresh事件
 }
